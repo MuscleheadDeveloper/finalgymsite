@@ -5,13 +5,6 @@ const path = require("path");
 
 require("dotenv").config();
 
-router.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "/client/build", "index.html"));
-});
-router.get("/", (req, res) => {
-  res.render("https://muscleheadgym.herokuapp.com/api/");
-});
-
 router.post("/login", (req, res) => {
   const email = req.body.email;
   const lastname = req.body.lastName;

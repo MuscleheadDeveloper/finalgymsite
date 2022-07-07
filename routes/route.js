@@ -21,7 +21,7 @@ router.post("/login", (req, res) => {
         merge_fields: {
           LNAME: lastname,
           FNAME: firstname,
-          PHONE: phone,
+          PHONE: phone, 
         },
       },
     ],
@@ -31,7 +31,7 @@ router.post("/login", (req, res) => {
   const url = `https://us13.api.mailchimp.com/3.0/lists/${mailchimp_id}`;
   const options = {
     method: "POST",
-    auth: `okondolee: ${mailchimp_key}`,
+    auth: `okondolee:${mailchimp_key}`,
   };
 
   const request = https.request(url, options, (response) => {

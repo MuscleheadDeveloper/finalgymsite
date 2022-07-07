@@ -4,6 +4,8 @@ const https = require("https");
 const path = require("path");
 
 require("dotenv").config();
+const mailchimp_key = process.env.API__KEY;
+const mailchimp_id = process.env.LIST__ID;
 
 router.post("/login", (req, res) => {
   const email = req.body.email;
@@ -26,10 +28,10 @@ router.post("/login", (req, res) => {
   };
 
   const jsonData = JSON.stringify(RegisterTemplate);
-  const url = "https://us13.api.mailchimp.com/3.0/lists/6526f8e750";
+  const url = `https://us13.api.mailchimp.com/3.0/lists/${mailchimp_id}`;
   const options = {
     method: "POST",
-    auth: "okondolee:" + `${process.env.API__KEY}`,
+    auth: `okondolee: ${mailchimp_key}`,
   };
 
   const request = https.request(url, options, (response) => {

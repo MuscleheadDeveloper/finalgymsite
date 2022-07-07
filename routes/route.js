@@ -26,7 +26,7 @@ router.post("/login", (req, res) => {
   };
 
   const jsonData = JSON.stringify(RegisterTemplate);
-  const url = process.env.BASE__URL;
+  const url = "https://us13.api.mailchimp.com/3.0/lists/6526f8e750";
   const options = {
     method: "POST",
     auth: "okondolee:" + `${process.env.API__KEY}`,

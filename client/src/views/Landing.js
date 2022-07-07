@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import logo from "assets/img/gym1.jpg";
+import logo from "assets/img/gym3.jpg";
+import logo2 from "assets/img/gym1.jpg";
+import logo3 from "assets/img/team1.jpg";
+import logo4 from "assets/img/t2.jpg";
+import logo5 from "assets/img/t3.jpg";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import Aos from "aos";
@@ -88,7 +92,7 @@ export default function Landing() {
               >
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                    <div className="bg-orange-600 text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full">
                       <i className="fas fa-award"></i>
                     </div>
                     <h6 className="text-xl font-semibold">Awarded Agency</h6>
@@ -107,7 +111,7 @@ export default function Landing() {
               >
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-orange-600">
                       <i className="fas fa-fingerprint"></i>
                     </div>
                     <h6 className="text-xl font-semibold">Verified Company</h6>
@@ -129,25 +133,23 @@ export default function Landing() {
                 <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
-                <h3 className="text-3xl mb-2 font-semibold leading-normal">
+                <h3 className="text-3xl mb-2 font-semibold leading-normal text-gray-300">
                   Working with us is a pleasure
                 </h3>
-                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                  Don't let your uses guess by attaching tooltips and popoves to
-                  any element. Just make sure you enable them first via
-                  JavaScript.
+                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-300">
+                  We’ve learned the best ways to get your hearts pounding and
+                  your adrenaline pumping. We make sure all of our gyms have all
+                  the tools you need to perform your best.
                 </p>
-                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  The kit comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go. Just make sure you enable them first via
-                  JavaScript.
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-300">
+                  With a heritage that traces back to the glory days of Muscle
+                  Beach in Los Angeles, CA, we’ve been keeping people fit and
+                  changing lives for over 40 years. Our experience runs deep. We
+                  know the difference between cheap fads and time-proven
+                  techniques.
                 </p>
-                <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                  className="font-bold text-gray-800 mt-8"
-                >
-                  Check Tailwind Starter Kit!
+                <a href="/login" className="font-bold text-gray-300 mt-8">
+                  Check Us Out
                 </a>
               </div>
 
@@ -155,14 +157,14 @@ export default function Landing() {
                 <div
                   data-aos-duration="800"
                   data-aos="zoom-out"
-                  className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+                  className="relative flex flex-col min-w-0 break-words  bg-orange-600 w-full mb-6 shadow-lg rounded-lg"
                 >
                   <img
                     alt="..."
                     src={logo}
                     className="w-full align-middle rounded-t-lg"
                   />
-                  <blockquote className="relative p-8 mb-4">
+                  <blockquote className="relative p-8 mb-4 ">
                     <svg
                       preserveAspectRatio="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -178,13 +180,17 @@ export default function Landing() {
                         className="text-orange-600 fill-current"
                       ></polygon>
                     </svg>
-                    <h4 className="text-xl font-bold text-white">
+                    <h4 className="text-xl font-bold text-gray-700">
                       Top Notch Services
                     </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
+                    <p className="text-md font-light mt-2 text-gray-800">
+                      Although we have over 215 locations around the globe, each
+                      of our gyms are locally and independently-owned. Each gym
+                      is uniquely connected to the community, meaning that no
+                      two World Gym locations are the same. Everyone at World
+                      Gym is passionate about fitness. We love to work out. And
+                      we love to share our passion and knowledge with our
+                      members.
                     </p>
                   </blockquote>
                 </div>
@@ -220,7 +226,7 @@ export default function Landing() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src={logo}
+                  src={logo2}
                 />
               </div>
               <div
@@ -295,7 +301,7 @@ export default function Landing() {
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold uppercase">
-                  meet our heroes
+                  Meet Our Heroes
                 </h2>
                 <p className="text-lg leading-relaxed m-4">
                   Our trainers are here to dedicate the time and effort that you
@@ -306,12 +312,12 @@ export default function Landing() {
             <div className="flex flex-wrap items-center">
               <div
                 data-aos="flip-right"
-                className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+                className="w-full md:w-6/12 lg:w-4/12 lg:mb-12 mb-12 px-4"
               >
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/gym1.jpg").default}
+                    src={logo3}
                     className="shadow-lg rounded max-w-full mx-auto"
                     style={{ maxWidth: "250px" }}
                   />
@@ -325,7 +331,7 @@ export default function Landing() {
               </div>
               <div
                 data-aos="flip-right"
-                className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+                className="w-full md:w-6/12 lg:w-4/12 lg:mb-12 mb-12 px-4"
               >
                 <div className="px-6">
                   <img
@@ -344,12 +350,12 @@ export default function Landing() {
               </div>
               <div
                 data-aos="flip-right"
-                className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+                className="w-full md:w-6/12 lg:w-4/12 lg:mb-12 mb-12 px-4"
               >
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/gym3.jpg").default}
+                    src={logo}
                     className="shadow-lg rounded max-w-full mx-auto"
                     style={{ maxWidth: "250px" }}
                   />
@@ -363,12 +369,12 @@ export default function Landing() {
               </div>
               <div
                 data-aos="flip-right"
-                className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+                className="w-full md:w-6/12 lg:mb-0 mb-12 px-4"
               >
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="https://previews.123rf.com/images/hetmanstock/hetmanstock1908/hetmanstock190801047/128870925-a-beautiful-black-girl-is-engaged-in-a-gym.jpg"
+                    src={logo4}
                     className="shadow-lg rounded max-w-full mx-auto"
                     style={{ maxWidth: "250px" }}
                   />
@@ -380,12 +386,32 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
+              <div
+                data-aos="flip-right"
+                className="w-full md:w-6/12 lg:mb-0 mb-12 px-4"
+              >
+                <div className="px-6">
+                  <img
+                    alt="..."
+                    src={logo5}
+                    className="shadow-lg rounded max-w-full mx-auto"
+                    style={{ maxWidth: "250px" }}
+                  />
+                  <div className="pt-6 text-center">
+                    <h5 className="text-xl font-bold">One More</h5>
+                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                      Pallates
+                    </p>
+                  </div>
+                </div>
+              </div>
+          
             </div>
           </div>
         </section>
 
         <section
-          className="pb-20 relative block bg-white text-black"
+          className="pb-20 relative block bg-gray-300 text-black"
           id="contact"
         >
           <div
@@ -417,7 +443,7 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        <section className="relative block py-24 lg:pt-0 bg-white text-black">
+        <section className="relative block py-24 lg:pt-0 bg-gray-300 text-black">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">

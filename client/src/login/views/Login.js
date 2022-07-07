@@ -22,7 +22,7 @@ export default function Login() {
     };
 
     axios
-      .post("https://muscleheadgym.herokuapp.com/api/login", Registered)
+      .post("https://a-gymrat.herokuapp.com//api/login", Registered)
       .then((response) => {
         console.log(response.data);
       });
